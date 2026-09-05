@@ -1,0 +1,17 @@
+title: Praniti's Corner
+description: Portfolio, blog, and reading list
+theme: minima
+
+# These show up as nav links at the top of every page, in this order.
+# index.md (home) is included automatically - don't list it here.
+header_pages:
+  - blog.md
+  - reading-list.md
+
+plugins:
+  - jekyll-feed
+
+# Fill these in - they show up in minima's default footer
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/pranitidumb" }
