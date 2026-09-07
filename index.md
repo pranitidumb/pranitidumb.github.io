@@ -3,8 +3,7 @@ title: Home
 permalink: /
 ---
 <div class="hero-split">
-  <div class="hero-photo">[photo]</div>
-  <!-- Replace this div with: <img src="{{ '/assets/images/your-photo.jpg' | relative_url }}" alt="Praniti Khurana" class="hero-photo"> once you have a real photo -->
+  <img src="{{ '/assets/images/praniti.jpg' | relative_url }}" alt="Praniti Khurana" class="hero-photo">
   <div class="hero-text">
     <h1>Hi, I'm Praniti</h1>
     <p>I work in risk strategy at American Express, spending most of my
