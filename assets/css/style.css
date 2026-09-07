@@ -3,6 +3,7 @@
   --bg:         #FBF7EC;   /* cream canvas */
   --surface:    #FFFFFF;   /* card/row background */
   --border:     rgba(16, 12, 8, 0.12);
+  --grid-line:  rgba(16, 12, 8, 0.05);
   --ink:        #100C08;   /* smoky black - primary text */
   --ink-soft:   #5C584F;   /* muted warm gray for secondary text */
 
@@ -26,6 +27,10 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background: var(--bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 40px 40px;
   color: var(--ink);
   font-family: var(--sans);
   font-size: 16px;
@@ -117,11 +122,11 @@ main {
 h1, h2, h3 {
   font-family: var(--sans);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
   margin: 0 0 0.5em;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
-h1 { font-size: clamp(1.9rem, 5vw, 2.5rem); }
+h1 { font-size: clamp(2.6rem, 8vw, 4.5rem); }
 h2 {
   font-size: 0.8rem;
   margin-top: 2.6em;
@@ -150,64 +155,83 @@ p { margin: 0 0 1.1em; }
   margin-bottom: 2.4em;
 }
 
-/* ---------- database-style entry rows (projects, posts, books) ---------- */
+/* ---------- type-forward entry list (projects, books) ---------- */
 .entry-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin: 0 0 2.4em;
 }
 .entry-row {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 18px;
   display: flex;
-  gap: 16px;
-  align-items: baseline;
+  gap: 20px;
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
 }
+.entry-list .entry-row:last-child { border-bottom: 1px solid var(--border); }
 .entry-index {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--border);
+  -webkit-text-stroke: 1px var(--ink-soft);
   flex: 0 0 auto;
-  width: 32px;
-  padding-top: 3px;
+  line-height: 1;
+  padding-top: 2px;
+  width: 66px;
 }
 .entry-body { flex: 1 1 auto; min-width: 0; }
 .entry-row h3 {
-  font-size: 1.02rem;
-  margin: 0 0 4px;
-  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 8px;
+  font-weight: 700;
 }
 .entry-row p {
   color: var(--ink-soft);
-  font-size: 0.93rem;
-  margin: 0 0 8px;
+  font-size: 0.95rem;
+  margin: 0 0 14px;
+  max-width: 52ch;
 }
+.entry-meta {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  margin-bottom: 14px;
+}
+.entry-meta-row {
+  display: flex;
+  gap: 16px;
+  padding: 6px 0;
+  font-size: 0.85rem;
+}
+.entry-meta-row dt {
+  color: var(--ink-soft);
+  width: 80px;
+  flex: 0 0 auto;
+  font-weight: 500;
+}
+.entry-meta-row dd { margin: 0; }
 .entry-row a.entry-link {
   font-size: 0.87rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid var(--ink-soft);
 }
 .entry-row a.entry-link:hover { color: var(--navy); border-color: var(--navy); }
 
-/* colored tag pills, Notion-property style */
+/* filled, bolder tag pills */
 .tag {
   display: inline-block;
   font-size: 0.72rem;
-  font-weight: 600;
-  padding: 2px 9px;
+  font-weight: 700;
+  padding: 3px 10px;
   border-radius: 999px;
   margin: 0 6px 6px 0;
 }
-.tag-navy      { background: rgba(0, 29, 81, 0.1);    color: var(--navy); }
-.tag-olive     { background: rgba(109, 113, 46, 0.14); color: var(--olive); }
-.tag-burgundy  { background: rgba(92, 14, 34, 0.1);    color: var(--burgundy); }
-.tag-mahogany  { background: rgba(50, 25, 18, 0.1);    color: var(--mahogany); }
-.tag-skyblue   { background: rgba(135, 209, 234, 0.28); color: var(--skyblue); }
+.tag-navy      { background: var(--navy);     color: #fff; }
+.tag-olive     { background: var(--olive);    color: #fff; }
+.tag-burgundy  { background: var(--burgundy); color: #fff; }
+.tag-mahogany  { background: var(--mahogany); color: #fff; }
+.tag-skyblue   { background: var(--skyblue-bg); color: var(--navy); }
 
 /* ---------- blog listing ---------- */
 .catalog-list { list-style: none; margin: 0; padding: 0; }

@@ -9,11 +9,11 @@ permalink: /reading-list/
 <h2>Currently reading</h2>
 <div class="entry-list">
   <div class="entry-row">
-    <span class="entry-index">001</span>
+    <span class="entry-index">01</span>
     <div class="entry-body">
-      <span class="tag tag-skyblue">Reading</span>
       <h3>[Title]</h3>
       <p>by [Author] — [one line on what you think so far]</p>
+      <span class="tag tag-skyblue">Reading</span>
     </div>
   </div>
 </div>
@@ -21,27 +21,27 @@ permalink: /reading-list/
 <h2>Loved</h2>
 <div class="entry-list">
   <div class="entry-row">
-    <span class="entry-index">002</span>
+    <span class="entry-index">02</span>
     <div class="entry-body">
-      <span class="tag tag-olive">Loved</span>
       <h3>Project Hail Mary</h3>
       <p>by Andy Weir</p>
+      <span class="tag tag-olive">Loved</span>
     </div>
   </div>
   <div class="entry-row">
-    <span class="entry-index">003</span>
+    <span class="entry-index">03</span>
     <div class="entry-body">
-      <span class="tag tag-olive">Loved</span>
       <h3>The Love Hypothesis</h3>
       <p>by Ali Hazelwood</p>
+      <span class="tag tag-olive">Loved</span>
     </div>
   </div>
   <div class="entry-row">
-    <span class="entry-index">004</span>
+    <span class="entry-index">04</span>
     <div class="entry-body">
-      <span class="tag tag-olive">Loved</span>
       <h3>The Stranger</h3>
       <p>by Albert Camus</p>
+      <span class="tag tag-olive">Loved</span>
     </div>
   </div>
 </div>
@@ -49,11 +49,11 @@ permalink: /reading-list/
 <h2>Want to read</h2>
 <div class="entry-list">
   <div class="entry-row">
-    <span class="entry-index">005</span>
+    <span class="entry-index">05</span>
     <div class="entry-body">
-      <span class="tag tag-mahogany">Queued</span>
       <h3>[Title]</h3>
       <p>by [Author]</p>
+      <span class="tag tag-mahogany">Queued</span>
     </div>
   </div>
 </div>
