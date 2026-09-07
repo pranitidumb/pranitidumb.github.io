@@ -2,64 +2,22 @@
 title: Home
 permalink: /
 ---
-<div class="hero">
-  <h1>Hi, I'm Praniti</h1>
-  <p class="hero-sub">
-    [One or two sentences: what you're studying or working on, and what
-    kind of things you like building. Keep it plain and specific — this
-    is the line people actually read.]
-  </p>
-</div>
-
-<h2>Projects</h2>
-<div class="entry-list">
-
-  <div class="entry-row">
-    <span class="entry-index">01</span>
-    <div class="entry-body">
-      <h3>Book Recommender</h3>
-      <p>Reads your Goodreads history and figures out your "reading
-      personality" — pace, tone, morally-grey characters — then
-      recommends books that match it.</p>
-      <dl class="entry-meta">
-        <div class="entry-meta-row">
-          <dt>Stack</dt>
-          <dd><span class="tag tag-navy">Python</span>
-              <span class="tag tag-olive">Streamlit</span>
-              <span class="tag tag-skyblue">Claude API</span></dd>
-        </div>
-        <div class="entry-meta-row">
-          <dt>Status</dt>
-          <dd>Live</dd>
-        </div>
-      </dl>
-      <a class="entry-link" href="#">View project</a>
-      <!-- swap "#" for your deployed app's real URL -->
+<div class="hero-split">
+  <div class="hero-photo">[photo]</div>
+  <!-- Replace this div with: <img src="{{ '/assets/images/your-photo.jpg' | relative_url }}" alt="Praniti Khurana" class="hero-photo"> once you have a real photo -->
+  <div class="hero-text">
+    <h1>Hi, I'm Praniti</h1>
+    <p>I work in risk strategy at American Express, spending most of my
+    time figuring out how to balance profitability and risk without
+    losing sight of either. I studied at IIT Madras, with a stint at
+    the Technical University of Denmark, and I've cleared CFA Level 1.
+    Outside work: books, half-finished paintings, chasing odd trivia
+    and holding space for a lot of nuance.</p>
+    <div class="links-row">
+      <a class="link-pill navy" href="{{ '/resume/' | relative_url }}">Resume</a>
+      <a class="link-pill olive" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link-pill burgundy" href="mailto:your.email@example.com">Email</a>
     </div>
+    <!-- swap the LinkedIn "#" for your real profile URL -->
   </div>
-
-  <div class="entry-row">
-    <span class="entry-index">02</span>
-    <div class="entry-body">
-      <h3>[Project two]</h3>
-      <p>[One or two sentences on what it does.]</p>
-      <dl class="entry-meta">
-        <div class="entry-meta-row">
-          <dt>Stack</dt>
-          <dd><span class="tag tag-mahogany">[Tag]</span></dd>
-        </div>
-      </dl>
-      <a class="entry-link" href="#">View project</a>
-    </div>
-  </div>
-
 </div>
-
-<h2>About</h2>
-<p>[A short paragraph: your background, what you're currently learning,
-what kind of problems or projects genuinely interest you. Write it the
-way you'd actually talk about yourself, not like a resume line.]</p>
-
-<h2>Contact</h2>
-<p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-<p><a href="https://github.com/pranitidumb" target="_blank" rel="noopener">GitHub</a></p>

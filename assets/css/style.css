@@ -65,15 +65,6 @@ a { color: inherit; }
 .site-header {
   border-bottom: 1px solid var(--border);
 }
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  flex-wrap: wrap;
-  gap: 14px;
-}
 .brand {
   display: flex;
   align-items: center;
@@ -152,12 +143,72 @@ p { margin: 0 0 1.1em; }
 }
 
 /* the one bold moment: homepage hero */
-.hero h1 { max-width: 14ch; }
-.hero-sub {
+.hero-split {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.hero-photo {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background: repeating-linear-gradient(45deg, #fff, #fff 10px, var(--border) 10px, var(--border) 11px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.8rem;
   color: var(--ink-soft);
-  font-size: 1.05rem;
-  max-width: 52ch;
-  margin-bottom: 2.4em;
+}
+.hero-text { flex: 1 1 260px; min-width: 240px; }
+.hero-text h1 {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: 3.4rem;
+  margin: 0 0 8px;
+  line-height: 1;
+  color: var(--navy);
+  letter-spacing: normal;
+}
+.hero-text p { color: var(--ink-soft); font-size: 0.98rem; margin: 0 0 20px; }
+.links-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.link-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+.link-pill.navy { background: var(--navy); }
+.link-pill.olive { background: var(--olive); }
+.link-pill.burgundy { background: var(--burgundy); }
+
+/* ---------- centered header nav ---------- */
+.site-header-inner {
+  text-align: center;
+  padding: 24px 0 0;
+}
+.site-header-inner .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+.site-header-inner .site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 14px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
 }
 
 /* ---------- type-forward entry list (projects, books) ---------- */
@@ -296,7 +347,6 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- responsive ---------- */
 @media (max-width: 480px) {
-  .header-inner { flex-direction: column; align-items: flex-start; }
   .catalog-row { flex-direction: column; gap: 4px; }
   .catalog-date { width: auto; }
   .entry-row { flex-direction: column; gap: 4px; }
