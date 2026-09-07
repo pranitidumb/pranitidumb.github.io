@@ -1,33 +1,53 @@
 ---
-layout: page
 title: Home
 permalink: /
 ---
+<div class="hero">
+  <h1>Hi, I'm Praniti</h1>
+  <p class="hero-sub">
+    [One or two sentences: what you're studying or working on, and what
+    kind of things you like building. Keep it plain and specific — this
+    is the line people actually read.]
+  </p>
+</div>
 
-# Hi, I'm Praniti 👋
+<h2>Projects</h2>
+<div class="entry-list">
 
-Welcome to my corner of the internet. I'm [add a line about who you are -
-student, what you're studying/working on, what you're into].
+  <div class="entry-row">
+    <span class="entry-index">001</span>
+    <div class="entry-body">
+      <h3>Book Recommender</h3>
+      <p>Reads your Goodreads history and figures out your "reading
+      personality" — pace, tone, morally-grey characters — then
+      recommends books that match it.</p>
+      <span class="tag tag-navy">Python</span>
+      <span class="tag tag-olive">Streamlit</span>
+      <span class="tag tag-skyblue">Claude API</span>
+      <br>
+      <a class="entry-link" href="#">View project</a>
+      <!-- swap "#" for your deployed app's real URL -->
+    </div>
+  </div>
 
-## What I've built
+  <div class="entry-row">
+    <span class="entry-index">002</span>
+    <div class="entry-body">
+      <h3>[Project two]</h3>
+      <p>[One or two sentences on what it does.]</p>
+      <span class="tag tag-mahogany">[Tag]</span>
+      <br>
+      <a class="entry-link" href="#">View project</a>
+    </div>
+  </div>
 
-- **[Book Recommender](#)** — a Streamlit app that analyzes your Goodreads
-  history to figure out your "reading personality" (pace, tone, morally-grey
-  characters) and recommends books that match it. Built with Python, the
-  Anthropic API, and Google Books/Open Library.
-  <!-- swap "#" for your deployed app's real URL -->
+</div>
 
-- **[Project two](#)** — description here.
+<h2>About</h2>
+<p>[A short paragraph: your background, what you're currently learning,
+what kind of problems or projects genuinely interest you. Write it the
+way you'd actually talk about yourself, not like a resume line.]</p>
 
-## About me
-
-[A few sentences: your background, interests, what you're currently
-learning or working on, what kind of projects excite you.]
-
-## Get in touch
-
-- Email: [your.email@example.com](mailto:your.email@example.com)
-- GitHub: [github.com/pranitidumb](https://github.com/pranitidumb)
-
-Check out my [blog](/blog) for writing, or my [reading list](/reading-list)
-for what I've been into lately.
+<h2>Contact</h2>
+<p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+<p><a href="https://github.com/pranitidumb" target="_blank" rel="noopener">GitHub</a></p>

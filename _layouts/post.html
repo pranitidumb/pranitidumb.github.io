@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="page-head">
+    <p class="eyebrow">{{ page.date | date: "%B %-d, %Y" }}</p>
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="post-body">
+    {{ content }}
+  </div>
+  <p class="post-back"><a href="{{ '/blog/' | relative_url }}">&larr; Back to all entries</a></p>
+</article>

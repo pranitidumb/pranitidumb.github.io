@@ -1,0 +1,276 @@
+/* ---------- tokens ---------- */
+:root {
+  --bg:         #FBF7EC;   /* cream canvas */
+  --surface:    #FFFFFF;   /* card/row background */
+  --border:     rgba(16, 12, 8, 0.12);
+  --ink:        #100C08;   /* smoky black - primary text */
+  --ink-soft:   #5C584F;   /* muted warm gray for secondary text */
+
+  --navy:       #001D51;
+  --olive:      #6D712E;
+  --burgundy:   #5C0E22;
+  --mahogany:   #321912;
+  --skyblue:    #4E9CB5;   /* darkened from Nantucket Breeze for text-safe contrast */
+  --skyblue-bg: #87D1EA;
+
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --max-width: 720px;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a { color: inherit; }
+
+.skip-link a {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 8px 14px;
+  z-index: 100;
+}
+.skip-link a:focus { left: 24px; top: 24px; }
+
+/* ---------- header ---------- */
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.wordmark {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.site-nav {
+  display: flex;
+  gap: 26px;
+}
+.site-nav a {
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* ---------- main / typography ---------- */
+main {
+  padding-top: 52px;
+  padding-bottom: 80px;
+  min-height: 60vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--sans);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: clamp(1.9rem, 5vw, 2.5rem); }
+h2 {
+  font-size: 0.8rem;
+  margin-top: 2.6em;
+  color: var(--ink-soft);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+p { margin: 0 0 1.1em; }
+
+.page-head { margin-bottom: 36px; }
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin: 0 0 8px;
+}
+
+/* the one bold moment: homepage hero */
+.hero h1 { max-width: 14ch; }
+.hero-sub {
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  max-width: 52ch;
+  margin-bottom: 2.4em;
+}
+
+/* ---------- database-style entry rows (projects, posts, books) ---------- */
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 2.4em;
+}
+.entry-row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+.entry-index {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  flex: 0 0 auto;
+  width: 32px;
+  padding-top: 3px;
+}
+.entry-body { flex: 1 1 auto; min-width: 0; }
+.entry-row h3 {
+  font-size: 1.02rem;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+.entry-row p {
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+  margin: 0 0 8px;
+}
+.entry-row a.entry-link {
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink-soft);
+}
+.entry-row a.entry-link:hover { color: var(--navy); border-color: var(--navy); }
+
+/* colored tag pills, Notion-property style */
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin: 0 6px 6px 0;
+}
+.tag-navy      { background: rgba(0, 29, 81, 0.1);    color: var(--navy); }
+.tag-olive     { background: rgba(109, 113, 46, 0.14); color: var(--olive); }
+.tag-burgundy  { background: rgba(92, 14, 34, 0.1);    color: var(--burgundy); }
+.tag-mahogany  { background: rgba(50, 25, 18, 0.1);    color: var(--mahogany); }
+.tag-skyblue   { background: rgba(135, 209, 234, 0.28); color: var(--skyblue); }
+
+/* ---------- blog listing ---------- */
+.catalog-list { list-style: none; margin: 0; padding: 0; }
+.catalog-row {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.catalog-row:first-child { border-top: 1px solid var(--border); }
+.catalog-date {
+  flex: 0 0 auto;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  width: 96px;
+}
+.catalog-title {
+  font-size: 0.98rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ink);
+}
+.catalog-title:hover { color: var(--navy); }
+
+.empty-note { color: var(--ink-soft); }
+
+/* ---------- blog post ---------- */
+.post-body { max-width: 66ch; }
+.post-body p { color: var(--ink); }
+.post-back { margin-top: 3em; font-size: 0.9rem; }
+.post-back a { color: var(--ink-soft); text-decoration: none; }
+.post-back a:hover { color: var(--ink); }
+
+/* ---------- footer ---------- */
+.site-footer { border-top: 1px solid var(--border); }
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+.footer-inner a { text-decoration: none; }
+.footer-inner a:hover { color: var(--ink); }
+
+/* ---------- accessibility / motion ---------- */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 480px) {
+  .header-inner { flex-direction: column; align-items: flex-start; }
+  .catalog-row { flex-direction: column; gap: 4px; }
+  .catalog-date { width: auto; }
+  .entry-row { flex-direction: column; gap: 4px; }
+  .entry-index { width: auto; }
+}
+

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="page-head">
+  <p class="eyebrow">Dispatches</p>
+  <h1>{{ page.title | default: "Blog" }}</h1>
+</div>
+
+<ol class="catalog-list">
+  {% for post in site.posts %}
+  <li class="catalog-row">
+    <span class="catalog-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="catalog-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ol>
+
+{% if site.posts.size == 0 %}
+<p class="empty-note">No entries yet — the first one's on its way.</p>
+{% endif %}
