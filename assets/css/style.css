@@ -65,19 +65,13 @@ a { color: inherit; }
 .site-header {
   border-bottom: 1px solid var(--border);
 }
-.home-icon {
-  display: inline-flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--navy);
-  color: #fff;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1rem;
+.home-link {
+  color: var(--ink);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
+.home-link:hover { color: var(--navy); }
 .site-nav {
   display: flex;
   gap: 26px;
@@ -141,8 +135,8 @@ p { margin: 0 0 1.1em; }
 }
 .hero-photo {
   flex: 0 0 auto;
-  width: 160px;
-  height: 160px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #fff;
