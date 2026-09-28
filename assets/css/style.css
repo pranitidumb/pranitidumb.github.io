@@ -326,3 +326,23 @@ a:focus-visible, button:focus-visible {
   .entry-index { width: auto; }
 }
 
+
+/* ---------- resume page ---------- */
+.resume-actions { margin-bottom: 24px; }
+.resume-embed {
+  display: block;
+  width: 100%;
+  height: 1150px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+@media (max-width: 700px) {
+  /* phones don't render embedded PDFs well - the buttons above do the job */
+  .resume-embed { display: none; }
+}
+
+/* ---------- blog intro ---------- */
+.blog-intro { max-width: 66ch; margin-bottom: 1.8em; }
+.blog-intro p { font-size: 1.02rem; line-height: 1.75; color: var(--ink); }
+.blog-cta { margin-bottom: 2.6em; }

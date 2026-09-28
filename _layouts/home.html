@@ -6,6 +6,8 @@ layout: default
   <h1>{{ page.title | default: "Blog" }}</h1>
 </div>
 
+{{ content }}
+
 <ol class="catalog-list">
   {% for post in site.posts %}
   <li class="catalog-row">

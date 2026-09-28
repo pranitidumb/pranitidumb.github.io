@@ -14,9 +14,8 @@ permalink: /
     and holding space for a lot of nuance.</p>
     <div class="links-row">
       <a class="link-pill navy" href="{{ '/resume/' | relative_url }}">Resume</a>
-      <a class="link-pill olive" href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="link-pill burgundy" href="mailto:your.email@example.com">Email</a>
+      <a class="link-pill olive" href="https://www.linkedin.com/in/pranitik" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link-pill burgundy" href="mailto:pranitikhurana202@gmail.com">Email</a>
     </div>
-    <!-- swap the LinkedIn "#" for your real profile URL -->
   </div>
 </div>
