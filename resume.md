@@ -1,6 +1,7 @@
 ---
 title: Resume
 permalink: /resume/
+noindex: true
 ---
 <div class="page-head">
   <h1>Resume</h1>
