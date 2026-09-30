@@ -12,9 +12,11 @@ permalink: /personal-projects/
     <span class="entry-index">01</span>
     <div class="entry-body">
       <h3>Book Recommender</h3>
-      <p>Reads your Goodreads history and figures out your "reading
-      personality" — pace, tone, morally-grey characters — then
-      recommends books that match it.</p>
+      <p>Import your Goodreads library or add a few favourites, and it
+      works out your reading personality: the pace, tone, tropes and
+      emotional intensity you keep coming back to. Then it finds new
+      books and scores each one against your taste, with a one-line
+      reason for every pick.</p>
       <dl class="entry-meta">
         <div class="entry-meta-row">
           <dt>Stack</dt>
@@ -27,8 +29,7 @@ permalink: /personal-projects/
           <dd>Live</dd>
         </div>
       </dl>
-      <a class="entry-link" href="#">View project</a>
-      <!-- swap "#" for your deployed app's real URL -->
+      <a class="entry-link" href="https://book-recommenderz-0202.streamlit.app/" target="_blank" rel="noopener">View project</a>
     </div>
   </div>
 
