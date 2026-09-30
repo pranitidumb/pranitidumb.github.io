@@ -36,15 +36,22 @@ permalink: /personal-projects/
   <div class="entry-row">
     <span class="entry-index">02</span>
     <div class="entry-body">
-      <h3>[Project two]</h3>
-      <p>[One or two sentences on what it does.]</p>
+      <h3>Trivia Vault</h3>
+      <p>Trivia I love collecting, all in one place. Browse by topic, pull a
+      random fact, or test yourself with a quiz. I keep adding to it as I go.</p>
       <dl class="entry-meta">
         <div class="entry-meta-row">
           <dt>Stack</dt>
-          <dd><span class="tag tag-mahogany">[Tag]</span></dd>
+          <dd><span class="tag tag-navy">Python</span>
+              <span class="tag tag-olive">Streamlit</span>
+              <span class="tag tag-mahogany">Google Sheets</span></dd>
+        </div>
+        <div class="entry-meta-row">
+          <dt>Status</dt>
+          <dd>Live</dd>
         </div>
       </dl>
-      <a class="entry-link" href="#">View project</a>
+      <a class="entry-link" href="https://praniti-trivia-vault.streamlit.app/" target="_blank" rel="noopener">View project</a>
     </div>
   </div>
 
