@@ -343,6 +343,6 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ---------- blog intro ---------- */
-.blog-intro { max-width: 66ch; margin-bottom: 1.8em; }
-.blog-intro p { font-size: 1.02rem; line-height: 1.75; color: var(--ink); }
+.blog-intro, .work-intro { max-width: 66ch; margin-bottom: 1.8em; }
+.blog-intro p, .work-intro p { font-size: 1.02rem; line-height: 1.75; color: var(--ink); }
 .blog-cta { margin-bottom: 2.6em; }
