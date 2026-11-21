@@ -18,9 +18,8 @@ permalink: /reading-list/
 <p style="margin-top: 3em; color: var(--ink-soft); font-size: 0.92rem;">
   This list comes from a reading-personality app I built — it reads your
   Goodreads history and figures out your taste in pace, tone, and
-  character type. <a href="#" style="color: var(--navy);">Check it out</a>.
+  character type. <a href="https://book-recommenderz-0202.streamlit.app/" target="_blank" rel="noopener" style="color: var(--navy);">Check it out</a>.
 </p>
-<!-- swap "#" for your deployed book recommender URL -->
 
 <script>
 (function () {

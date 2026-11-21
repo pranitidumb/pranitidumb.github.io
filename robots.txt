@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /assets/Praniti_Khurana_Resume.pdf
 
 Sitemap: https://pranitikhurana.com/sitemap.xml

@@ -13,7 +13,6 @@ permalink: /
     Outside work: books, half-finished paintings, chasing odd trivia
     and holding space for a lot of nuance.</p>
     <div class="links-row">
-      <a class="link-pill navy" href="{{ '/resume/' | relative_url }}">Resume</a>
       <a class="link-pill olive" href="https://www.linkedin.com/in/pranitik" target="_blank" rel="noopener">LinkedIn</a>
       <a class="link-pill burgundy" href="mailto:pranitikhurana202@gmail.com">Email</a>
     </div>
